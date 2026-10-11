@@ -1,0 +1,105 @@
+[
+  {
+    "name": "midjourney_imagine-1",
+    "tool": "midjourney_imagine",
+    "inputs": {
+      "prompt": "Test"
+    },
+    "method": "POST",
+    "path": "/midjourney/imagine",
+    "body": {
+      "version": "8.2",
+      "async": true
+    }
+  },
+  {
+    "name": "midjourney_edits-2",
+    "tool": "midjourney_edits",
+    "inputs": {
+      "prompt": "Edit",
+      "image_url": "https://example.org/reference.png"
+    },
+    "method": "POST",
+    "path": "/midjourney/edits",
+    "body": {
+      "image_url": "https://example.org/reference.png"
+    }
+  },
+  {
+    "name": "midjourney_describe-3",
+    "tool": "midjourney_describe",
+    "inputs": {
+      "image_url": "https://example.org/reference.png"
+    },
+    "method": "POST",
+    "path": "/midjourney/describe",
+    "body": {
+      "image_url": "https://example.org/reference.png"
+    }
+  },
+  {
+    "name": "midjourney_translate-4",
+    "tool": "midjourney_translate",
+    "inputs": {
+      "content": "你好"
+    },
+    "method": "POST",
+    "path": "/midjourney/translate",
+    "body": {
+      "content": "你好"
+    }
+  },
+  {
+    "name": "midjourney_videos-5",
+    "tool": "midjourney_videos",
+    "inputs": {
+      "prompt": "Animate",
+      "image_url": "https://example.org/reference.png"
+    },
+    "method": "POST",
+    "path": "/midjourney/videos",
+    "body": {
+      "image_url": "https://example.org/reference.png"
+    }
+  },
+  {
+    "name": "midjourney_get_seed-6",
+    "tool": "midjourney_get_seed",
+    "inputs": {
+      "image_id": "owned-image"
+    },
+    "method": "POST",
+    "path": "/midjourney/seed",
+    "body": {
+      "image_id": "owned-image"
+    }
+  },
+  {
+    "name": "midjourney_shorten-7",
+    "tool": "midjourney_shorten",
+    "inputs": {
+      "prompt": "Test"
+    },
+    "method": "POST",
+    "path": "/midjourney/shorten",
+    "body": {
+      "prompt": "Test"
+    }
+  },
+  {
+    "name": "midjourney_tasks_retrieve_batch-8",
+    "tool": "midjourney_tasks_retrieve_batch",
+    "inputs": {
+      "ids": "[\"owned-task\"]"
+    },
+    "method": "POST",
+    "path": "/midjourney/tasks",
+    "body": {
+      "action": "retrieve_batch",
+      "ids": [
+        "owned-task"
+      ]
+    },
+    "read_only": true
+  }
+]
