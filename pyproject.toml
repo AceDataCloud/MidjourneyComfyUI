@@ -1,6 +1,6 @@
 [project]
 name = "midjourney"
-version = "0.1.0"
+version = "0.1.1"
 description = "Midjourney Dify-parity tools through Ace Data Cloud for ComfyUI"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
@@ -14,5 +14,5 @@ Documentation = "https://github.com/AceDataCloud/MidjourneyComfyUI#readme"
 
 [tool.comfy]
 PublisherId = "acedatacloud"
-DisplayName = "Midjourney by Ace Data Cloud"
+DisplayName = "Midjourney"
 Icon = "https://raw.githubusercontent.com/AceDataCloud/MidjourneyComfyUI/main/assets/logo-400.png"
